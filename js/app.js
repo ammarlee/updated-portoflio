@@ -82,10 +82,10 @@ function  showScrollBtn(){
     let iconResult=""
     skillsIcons.forEach((item)=>{
       iconResult +=`
-      <div class="col-sm-2 col-6 col-md-2 px-0 mt-1 ">
+      <div class="col-sm-2 col-6 col-md-2 px-0 mt-1 " data-aos="zoom-in" >
       <div class="skill-item">
       <div>
-      <i class="${item.icon} fa-3x"></i>
+      <i class="${item.icon} fa-3x" ></i>
       </div>
       ${item.name}
       </div>
@@ -101,7 +101,7 @@ function  showScrollBtn(){
     let result = ""
     projectsData.forEach(item=>{
       result += `
-      <div class="block  col-12 col-sm-4 col-md-4" style="background-image: url(${item.img})">
+      <div data-aos="zoom-in" class="block  col-12 col-sm-4 col-md-4" style="background-image: url(${item.img})">
         <div class="overlay"></div>
         <div class="block--text">
           <div class="text--head">${item.name}</div>
