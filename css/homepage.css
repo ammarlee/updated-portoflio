@@ -3,17 +3,6 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden; }
 
-.loading {
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background-color: #1abc9c;
-  color: white;
-  position: fixed;
-  display: none;
-  left: 0;
-  top: 0; }
-
 section {
   text-align: center;
   text-transform: uppercase; }
@@ -27,7 +16,7 @@ h4 {
   font-weight: bold; }
 
 h1 {
-  font-size: 28px; }
+  font-size: 33px; }
 
 h2 {
   font-size: 24px; }
@@ -49,7 +38,9 @@ hr {
   font-family: -webkit-body;
   font-size: 26px;
   color: #ffde00;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: bold !important;
+  text-transform: uppercase !important; }
 .navbar .navbar-toggler {
   position: absolute;
   right: 0;
@@ -62,11 +53,25 @@ hr {
   color: white;
   font-size: 18px;
   cursor: pointer;
-  font-weight: bold; }
-  .navbar .collapse .nav-link:hover {
-    color: #ffde00; }
-  .navbar .collapse .nav-link:active {
-    color: #ffde00; }
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out; }
+  .navbar .collapse .nav-link:hover, .navbar .collapse .nav-link:active {
+    color: #ffde00;
+    padding-left: 4px;
+    padding-right: 5px; }
+    .navbar .collapse .nav-link:hover i, .navbar .collapse .nav-link:active i {
+      color: white;
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out; }
+  .navbar .collapse .nav-link i {
+    color: #666; }
 
 .about {
   background-color: #1c1d25;
@@ -187,7 +192,7 @@ hr {
   padding-bottom: 60px; }
   .contact .head {
     margin-bottom: 50px; }
-    .contact .head h2 {
+    .contact .head h1 {
       font-weight: 400; }
   .contact .row div {
     margin-bottom: 10px; }
